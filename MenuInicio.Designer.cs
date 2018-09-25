@@ -171,7 +171,7 @@
             // 
             // piclogo
             // 
-            this.piclogo.Image = global::SistemadeAbogados.Properties.Resources.logosistema;
+            this.piclogo.Image = ((System.Drawing.Image)(resources.GetObject("piclogo.Image")));
             this.piclogo.Location = new System.Drawing.Point(3, 9);
             this.piclogo.Name = "piclogo";
             this.piclogo.Size = new System.Drawing.Size(58, 61);
