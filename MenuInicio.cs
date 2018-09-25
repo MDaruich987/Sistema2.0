@@ -127,7 +127,7 @@ namespace SistemadeAbogados
 
         private void PanelContenedor_Paint(object sender, PaintEventArgs e)
         {
-
+            //hello
         }
 
         /*metodo que permite redimensionar la ventana tirando de ella. No se usa porque bloquea la animacion
