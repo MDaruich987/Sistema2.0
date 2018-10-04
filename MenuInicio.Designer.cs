@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuInicio));
             this.menuvertical = new System.Windows.Forms.Panel();
             this.btninformes = new System.Windows.Forms.Button();
-            this.btncomentarios = new System.Windows.Forms.Button();
-            this.btnmovimientos = new System.Windows.Forms.Button();
-            this.btnprocuraciones = new System.Windows.Forms.Button();
-            this.btnjuzgados = new System.Windows.Forms.Button();
-            this.btnestudiosjuridicos = new System.Windows.Forms.Button();
+            this.btnConsultarMovimiento = new System.Windows.Forms.Button();
+            this.btnRegistrarMovimiento = new System.Windows.Forms.Button();
+            this.btnconsultarprocuracion = new System.Windows.Forms.Button();
+            this.btnregistrarprocuracion = new System.Windows.Forms.Button();
+            this.btnInicio = new System.Windows.Forms.Button();
             this.piclogo = new System.Windows.Forms.PictureBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.picocultar = new System.Windows.Forms.PictureBox();
@@ -58,11 +58,11 @@
             // 
             this.menuvertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.menuvertical.Controls.Add(this.btninformes);
-            this.menuvertical.Controls.Add(this.btncomentarios);
-            this.menuvertical.Controls.Add(this.btnmovimientos);
-            this.menuvertical.Controls.Add(this.btnprocuraciones);
-            this.menuvertical.Controls.Add(this.btnjuzgados);
-            this.menuvertical.Controls.Add(this.btnestudiosjuridicos);
+            this.menuvertical.Controls.Add(this.btnConsultarMovimiento);
+            this.menuvertical.Controls.Add(this.btnRegistrarMovimiento);
+            this.menuvertical.Controls.Add(this.btnconsultarprocuracion);
+            this.menuvertical.Controls.Add(this.btnregistrarprocuracion);
+            this.menuvertical.Controls.Add(this.btnInicio);
             this.menuvertical.Controls.Add(this.piclogo);
             this.menuvertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuvertical.Location = new System.Drawing.Point(0, 0);
@@ -86,88 +86,95 @@
             this.btninformes.Text = "Informes";
             this.btninformes.UseVisualStyleBackColor = true;
             // 
-            // btncomentarios
+            // btnConsultarMovimiento
             // 
-            this.btncomentarios.FlatAppearance.BorderSize = 0;
-            this.btncomentarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btncomentarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncomentarios.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncomentarios.ForeColor = System.Drawing.Color.White;
-            this.btncomentarios.Image = global::SistemadeAbogados.Properties.Resources.comentario_forma_de_burbuja_ovalada_negra;
-            this.btncomentarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncomentarios.Location = new System.Drawing.Point(3, 309);
-            this.btncomentarios.Name = "btncomentarios";
-            this.btncomentarios.Size = new System.Drawing.Size(247, 45);
-            this.btncomentarios.TabIndex = 5;
-            this.btncomentarios.Text = "Comentarios";
-            this.btncomentarios.UseVisualStyleBackColor = true;
+            this.btnConsultarMovimiento.FlatAppearance.BorderSize = 0;
+            this.btnConsultarMovimiento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnConsultarMovimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultarMovimiento.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarMovimiento.ForeColor = System.Drawing.Color.White;
+            this.btnConsultarMovimiento.Image = global::SistemadeAbogados.Properties.Resources.comentario_forma_de_burbuja_ovalada_negra;
+            this.btnConsultarMovimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultarMovimiento.Location = new System.Drawing.Point(3, 309);
+            this.btnConsultarMovimiento.Name = "btnConsultarMovimiento";
+            this.btnConsultarMovimiento.Size = new System.Drawing.Size(244, 45);
+            this.btnConsultarMovimiento.TabIndex = 5;
+            this.btnConsultarMovimiento.Text = "Consultar Movimiento";
+            this.btnConsultarMovimiento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConsultarMovimiento.UseVisualStyleBackColor = true;
+            this.btnConsultarMovimiento.Click += new System.EventHandler(this.btnConsultarMovimiento_Click);
             // 
-            // btnmovimientos
+            // btnRegistrarMovimiento
             // 
-            this.btnmovimientos.FlatAppearance.BorderSize = 0;
-            this.btnmovimientos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnmovimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnmovimientos.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmovimientos.ForeColor = System.Drawing.Color.White;
-            this.btnmovimientos.Image = global::SistemadeAbogados.Properties.Resources.flechas_de_intercambio;
-            this.btnmovimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnmovimientos.Location = new System.Drawing.Point(3, 258);
-            this.btnmovimientos.Name = "btnmovimientos";
-            this.btnmovimientos.Size = new System.Drawing.Size(247, 45);
-            this.btnmovimientos.TabIndex = 4;
-            this.btnmovimientos.Text = "Movimientos";
-            this.btnmovimientos.UseVisualStyleBackColor = true;
+            this.btnRegistrarMovimiento.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarMovimiento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnRegistrarMovimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarMovimiento.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarMovimiento.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarMovimiento.Image = global::SistemadeAbogados.Properties.Resources.flechas_de_intercambio;
+            this.btnRegistrarMovimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistrarMovimiento.Location = new System.Drawing.Point(3, 258);
+            this.btnRegistrarMovimiento.Name = "btnRegistrarMovimiento";
+            this.btnRegistrarMovimiento.Size = new System.Drawing.Size(241, 45);
+            this.btnRegistrarMovimiento.TabIndex = 4;
+            this.btnRegistrarMovimiento.Text = "Registrar Movimiento";
+            this.btnRegistrarMovimiento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegistrarMovimiento.UseVisualStyleBackColor = true;
+            this.btnRegistrarMovimiento.Click += new System.EventHandler(this.btnRegistrarMovimiento_Click);
             // 
-            // btnprocuraciones
+            // btnconsultarprocuracion
             // 
-            this.btnprocuraciones.FlatAppearance.BorderSize = 0;
-            this.btnprocuraciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnprocuraciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnprocuraciones.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprocuraciones.ForeColor = System.Drawing.Color.White;
-            this.btnprocuraciones.Image = global::SistemadeAbogados.Properties.Resources.archivo1;
-            this.btnprocuraciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnprocuraciones.Location = new System.Drawing.Point(3, 207);
-            this.btnprocuraciones.Name = "btnprocuraciones";
-            this.btnprocuraciones.Size = new System.Drawing.Size(247, 45);
-            this.btnprocuraciones.TabIndex = 3;
-            this.btnprocuraciones.Text = "Procuraciones";
-            this.btnprocuraciones.UseVisualStyleBackColor = true;
-            this.btnprocuraciones.Click += new System.EventHandler(this.button3_Click);
+            this.btnconsultarprocuracion.FlatAppearance.BorderSize = 0;
+            this.btnconsultarprocuracion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnconsultarprocuracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnconsultarprocuracion.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnconsultarprocuracion.ForeColor = System.Drawing.Color.White;
+            this.btnconsultarprocuracion.Image = global::SistemadeAbogados.Properties.Resources.archivo1;
+            this.btnconsultarprocuracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnconsultarprocuracion.Location = new System.Drawing.Point(3, 207);
+            this.btnconsultarprocuracion.Name = "btnconsultarprocuracion";
+            this.btnconsultarprocuracion.Size = new System.Drawing.Size(241, 45);
+            this.btnconsultarprocuracion.TabIndex = 3;
+            this.btnconsultarprocuracion.Text = "Consultar Procuración";
+            this.btnconsultarprocuracion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnconsultarprocuracion.UseVisualStyleBackColor = true;
+            this.btnconsultarprocuracion.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btnjuzgados
+            // btnregistrarprocuracion
             // 
-            this.btnjuzgados.FlatAppearance.BorderSize = 0;
-            this.btnjuzgados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnjuzgados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnjuzgados.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnjuzgados.ForeColor = System.Drawing.Color.White;
-            this.btnjuzgados.Image = global::SistemadeAbogados.Properties.Resources.edificio_del_capitolio;
-            this.btnjuzgados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnjuzgados.Location = new System.Drawing.Point(3, 156);
-            this.btnjuzgados.Name = "btnjuzgados";
-            this.btnjuzgados.Size = new System.Drawing.Size(250, 45);
-            this.btnjuzgados.TabIndex = 2;
-            this.btnjuzgados.Text = "Juzgados";
-            this.btnjuzgados.UseVisualStyleBackColor = true;
-            this.btnjuzgados.Click += new System.EventHandler(this.button2_Click);
+            this.btnregistrarprocuracion.FlatAppearance.BorderSize = 0;
+            this.btnregistrarprocuracion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnregistrarprocuracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnregistrarprocuracion.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregistrarprocuracion.ForeColor = System.Drawing.Color.White;
+            this.btnregistrarprocuracion.Image = global::SistemadeAbogados.Properties.Resources.edificio_del_capitolio;
+            this.btnregistrarprocuracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnregistrarprocuracion.Location = new System.Drawing.Point(3, 156);
+            this.btnregistrarprocuracion.Name = "btnregistrarprocuracion";
+            this.btnregistrarprocuracion.Size = new System.Drawing.Size(241, 45);
+            this.btnregistrarprocuracion.TabIndex = 2;
+            this.btnregistrarprocuracion.Text = "Registrar Procuración";
+            this.btnregistrarprocuracion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnregistrarprocuracion.UseVisualStyleBackColor = true;
+            this.btnregistrarprocuracion.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnestudiosjuridicos
+            // btnInicio
             // 
-            this.btnestudiosjuridicos.FlatAppearance.BorderSize = 0;
-            this.btnestudiosjuridicos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnestudiosjuridicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnestudiosjuridicos.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnestudiosjuridicos.ForeColor = System.Drawing.Color.White;
-            this.btnestudiosjuridicos.Image = global::SistemadeAbogados.Properties.Resources.edificio_de_banco__1_;
-            this.btnestudiosjuridicos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnestudiosjuridicos.Location = new System.Drawing.Point(3, 105);
-            this.btnestudiosjuridicos.Name = "btnestudiosjuridicos";
-            this.btnestudiosjuridicos.Size = new System.Drawing.Size(250, 45);
-            this.btnestudiosjuridicos.TabIndex = 1;
-            this.btnestudiosjuridicos.Text = "Estudios jurídicos";
-            this.btnestudiosjuridicos.UseVisualStyleBackColor = true;
-            this.btnestudiosjuridicos.Click += new System.EventHandler(this.btnestudiosjuridicos_Click);
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.Color.White;
+            this.btnInicio.Image = global::SistemadeAbogados.Properties.Resources.edificio_de_banco__1_;
+            this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInicio.Location = new System.Drawing.Point(3, 105);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(126, 45);
+            this.btnInicio.TabIndex = 1;
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnInicio.Click += new System.EventHandler(this.btnestudiosjuridicos_Click);
             // 
             // piclogo
             // 
@@ -295,12 +302,12 @@
         private System.Windows.Forms.Panel PanelContenedor;
         private System.Windows.Forms.PictureBox menuslide;
         private System.Windows.Forms.PictureBox piclogo;
-        private System.Windows.Forms.Button btnestudiosjuridicos;
+        private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Button btninformes;
-        private System.Windows.Forms.Button btncomentarios;
-        private System.Windows.Forms.Button btnmovimientos;
-        private System.Windows.Forms.Button btnprocuraciones;
-        private System.Windows.Forms.Button btnjuzgados;
+        private System.Windows.Forms.Button btnConsultarMovimiento;
+        private System.Windows.Forms.Button btnRegistrarMovimiento;
+        private System.Windows.Forms.Button btnconsultarprocuracion;
+        private System.Windows.Forms.Button btnregistrarprocuracion;
         private System.Windows.Forms.PictureBox picocultar;
         private System.Windows.Forms.PictureBox picminimizar;
         private System.Windows.Forms.PictureBox picmaximizar;

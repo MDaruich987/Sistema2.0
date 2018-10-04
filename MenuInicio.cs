@@ -69,12 +69,16 @@ namespace SistemadeAbogados
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            //en el click de este boton llamamos al formulario de estudios juridicos
+            //y lo alojamos en el form padre, que es el menu
+            AbrirFormularioEnPanel(new RegistrarProcuracionSecretario());
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            //en el click de este boton llamamos al formulario de estudios juridicos
+            //y lo alojamos en el form padre, que es el menu
+            AbrirFormularioEnPanel(new ConsultarProcuracion());
         }
 
         private void piccerrar_Click(object sender, EventArgs e)
@@ -122,7 +126,21 @@ namespace SistemadeAbogados
         {
             //en el click de este boton llamamos al formulario de estudios juridicos
             //y lo alojamos en el form padre, que es el menu
-           // AbrirFormularioEnPanel(new FormInicioSecretario());
+           AbrirFormularioEnPanel(new FormInicioSecretario());
+        }
+
+        private void btnRegistrarMovimiento_Click(object sender, EventArgs e)
+        {
+            //en el click de este boton llamamos al formulario de estudios juridicos
+            //y lo alojamos en el form padre, que es el menu
+            AbrirFormularioEnPanel(new RegistrarMovimientoSecretario());
+        }
+
+        private void btnConsultarMovimiento_Click(object sender, EventArgs e)
+        {
+            //en el click de este boton llamamos al formulario de estudios juridicos
+            //y lo alojamos en el form padre, que es el menu
+           // AbrirFormularioEnPanel(new Consultar());
         }
 
         private void PanelContenedor_Paint(object sender, PaintEventArgs e)

@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultarProcuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarProcuracion.Designer.cs">
+      <DependentUpon>ConsultarProcuracion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInicioSecretario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarMovimientoSecretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarMovimientoSecretario.Designer.cs">
+      <DependentUpon>RegistrarMovimientoSecretario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarProcuracionSecretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarProcuracionSecretario.Designer.cs">
+      <DependentUpon>RegistrarProcuracionSecretario.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConsultarProcuracion.resx">
+      <DependentUpon>ConsultarProcuracion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInicioSecretario.resx">
       <DependentUpon>FormInicioSecretario.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +109,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistrarMovimientoSecretario.resx">
+      <DependentUpon>RegistrarMovimientoSecretario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarProcuracionSecretario.resx">
+      <DependentUpon>RegistrarProcuracionSecretario.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

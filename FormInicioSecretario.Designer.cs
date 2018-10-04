@@ -36,20 +36,22 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblvencimientosdeproveidos = new System.Windows.Forms.Label();
             this.gridvencimientosproveidos = new System.Windows.Forms.DataGridView();
-            this.lblcomentariosprocuraciones = new System.Windows.Forms.Label();
-            this.gridcomentariosprocuraciones = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Diasrestantes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Idprocuracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblcomentariosprocuraciones = new System.Windows.Forms.Label();
+            this.gridcomentariosprocuraciones = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gbregistrarprocuracion = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridvencimientosproveidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridcomentariosprocuraciones)).BeginInit();
+            this.gbregistrarprocuracion.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblvencimientosdeproveidos
@@ -57,7 +59,7 @@
             this.lblvencimientosdeproveidos.AutoSize = true;
             this.lblvencimientosdeproveidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblvencimientosdeproveidos.ForeColor = System.Drawing.Color.White;
-            this.lblvencimientosdeproveidos.Location = new System.Drawing.Point(37, 29);
+            this.lblvencimientosdeproveidos.Location = new System.Drawing.Point(22, 30);
             this.lblvencimientosdeproveidos.Name = "lblvencimientosdeproveidos";
             this.lblvencimientosdeproveidos.Size = new System.Drawing.Size(263, 20);
             this.lblvencimientosdeproveidos.TabIndex = 8;
@@ -101,7 +103,7 @@
             this.gridvencimientosproveidos.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridvencimientosproveidos.EnableHeadersVisualStyles = false;
             this.gridvencimientosproveidos.GridColor = System.Drawing.Color.SteelBlue;
-            this.gridvencimientosproveidos.Location = new System.Drawing.Point(41, 52);
+            this.gridvencimientosproveidos.Location = new System.Drawing.Point(26, 53);
             this.gridvencimientosproveidos.Name = "gridvencimientosproveidos";
             this.gridvencimientosproveidos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -112,16 +114,53 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridvencimientosproveidos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.gridvencimientosproveidos.Size = new System.Drawing.Size(735, 144);
+            this.gridvencimientosproveidos.Size = new System.Drawing.Size(690, 144);
             this.gridvencimientosproveidos.TabIndex = 9;
             this.gridvencimientosproveidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridvencimientosproveidos_CellContentClick);
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.Visible = false;
+            this.ID.Width = 44;
+            // 
+            // Diasrestantes
+            // 
+            this.Diasrestantes.HeaderText = "DÍAS RESTANTES";
+            this.Diasrestantes.Name = "Diasrestantes";
+            this.Diasrestantes.Width = 131;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "FECHA DE VENCIMIENTO";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 174;
+            // 
+            // Idprocuracion
+            // 
+            this.Idprocuracion.HeaderText = "PROCURACION";
+            this.Idprocuracion.Name = "Idprocuracion";
+            this.Idprocuracion.Width = 118;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "ABOGADO";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 88;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "DOCUMENTACIÓN";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 136;
             // 
             // lblcomentariosprocuraciones
             // 
             this.lblcomentariosprocuraciones.AutoSize = true;
             this.lblcomentariosprocuraciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcomentariosprocuraciones.ForeColor = System.Drawing.Color.White;
-            this.lblcomentariosprocuraciones.Location = new System.Drawing.Point(37, 245);
+            this.lblcomentariosprocuraciones.Location = new System.Drawing.Point(22, 229);
             this.lblcomentariosprocuraciones.Name = "lblcomentariosprocuraciones";
             this.lblcomentariosprocuraciones.Size = new System.Drawing.Size(279, 20);
             this.lblcomentariosprocuraciones.TabIndex = 10;
@@ -163,7 +202,7 @@
             this.gridcomentariosprocuraciones.DefaultCellStyle = dataGridViewCellStyle5;
             this.gridcomentariosprocuraciones.EnableHeadersVisualStyles = false;
             this.gridcomentariosprocuraciones.GridColor = System.Drawing.Color.SteelBlue;
-            this.gridcomentariosprocuraciones.Location = new System.Drawing.Point(41, 268);
+            this.gridcomentariosprocuraciones.Location = new System.Drawing.Point(26, 261);
             this.gridcomentariosprocuraciones.Name = "gridcomentariosprocuraciones";
             this.gridcomentariosprocuraciones.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -174,7 +213,7 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridcomentariosprocuraciones.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.gridcomentariosprocuraciones.Size = new System.Drawing.Size(689, 177);
+            this.gridcomentariosprocuraciones.Size = new System.Drawing.Size(690, 177);
             this.gridcomentariosprocuraciones.TabIndex = 11;
             // 
             // dataGridViewTextBoxColumn1
@@ -201,60 +240,34 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 110;
             // 
-            // ID
+            // gbregistrarprocuracion
             // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.Visible = false;
-            this.ID.Width = 42;
-            // 
-            // Diasrestantes
-            // 
-            this.Diasrestantes.HeaderText = "DÍAS RESTANTES";
-            this.Diasrestantes.Name = "Diasrestantes";
-            this.Diasrestantes.Width = 131;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "FECHA DE VENCIMIENTO";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 174;
-            // 
-            // Idprocuracion
-            // 
-            this.Idprocuracion.HeaderText = "PROCURACION";
-            this.Idprocuracion.Name = "Idprocuracion";
-            this.Idprocuracion.Width = 118;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "ABOGADO";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 88;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "DOCUMENTACIÓN";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 136;
+            this.gbregistrarprocuracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(99)))));
+            this.gbregistrarprocuracion.Controls.Add(this.lblcomentariosprocuraciones);
+            this.gbregistrarprocuracion.Controls.Add(this.gridcomentariosprocuraciones);
+            this.gbregistrarprocuracion.Controls.Add(this.gridvencimientosproveidos);
+            this.gbregistrarprocuracion.Controls.Add(this.lblvencimientosdeproveidos);
+            this.gbregistrarprocuracion.Location = new System.Drawing.Point(31, 31);
+            this.gbregistrarprocuracion.Name = "gbregistrarprocuracion";
+            this.gbregistrarprocuracion.Size = new System.Drawing.Size(765, 458);
+            this.gbregistrarprocuracion.TabIndex = 18;
+            this.gbregistrarprocuracion.TabStop = false;
             // 
             // FormInicioSecretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(742, 520);
-            this.Controls.Add(this.gridcomentariosprocuraciones);
-            this.Controls.Add(this.lblcomentariosprocuraciones);
-            this.Controls.Add(this.gridvencimientosproveidos);
-            this.Controls.Add(this.lblvencimientosdeproveidos);
+            this.ClientSize = new System.Drawing.Size(808, 520);
+            this.Controls.Add(this.gbregistrarprocuracion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormInicioSecretario";
             this.Text = "FormInicioSecretario";
             ((System.ComponentModel.ISupportInitialize)(this.gridvencimientosproveidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridcomentariosprocuraciones)).EndInit();
+            this.gbregistrarprocuracion.ResumeLayout(false);
+            this.gbregistrarprocuracion.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -274,5 +287,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Idprocuracion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.GroupBox gbregistrarprocuracion;
     }
 }
