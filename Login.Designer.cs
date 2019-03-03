@@ -40,10 +40,13 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.piccerrar = new System.Windows.Forms.PictureBox();
             this.picocultar = new System.Windows.Forms.PictureBox();
+            this.lblerror = new System.Windows.Forms.Label();
+            this.pberroringreso = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.piccerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picocultar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pberroringreso)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -73,7 +76,7 @@
             // 
             this.lbllineausuari.AutoSize = true;
             this.lbllineausuari.ForeColor = System.Drawing.Color.DimGray;
-            this.lbllineausuari.Location = new System.Drawing.Point(261, 94);
+            this.lbllineausuari.Location = new System.Drawing.Point(261, 70);
             this.lbllineausuari.Name = "lbllineausuari";
             this.lbllineausuari.Size = new System.Drawing.Size(217, 13);
             this.lbllineausuari.TabIndex = 1;
@@ -83,7 +86,7 @@
             // 
             this.lbllineacontraseña.AutoSize = true;
             this.lbllineacontraseña.ForeColor = System.Drawing.Color.DimGray;
-            this.lbllineacontraseña.Location = new System.Drawing.Point(261, 153);
+            this.lbllineacontraseña.Location = new System.Drawing.Point(261, 129);
             this.lbllineacontraseña.Name = "lbllineacontraseña";
             this.lbllineacontraseña.Size = new System.Drawing.Size(217, 13);
             this.lbllineacontraseña.TabIndex = 2;
@@ -95,7 +98,7 @@
             this.tbusuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbusuario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbusuario.ForeColor = System.Drawing.Color.DimGray;
-            this.tbusuario.Location = new System.Drawing.Point(264, 87);
+            this.tbusuario.Location = new System.Drawing.Point(264, 63);
             this.tbusuario.Name = "tbusuario";
             this.tbusuario.Size = new System.Drawing.Size(214, 19);
             this.tbusuario.TabIndex = 1;
@@ -110,7 +113,7 @@
             this.tbcontraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbcontraseña.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbcontraseña.ForeColor = System.Drawing.Color.DimGray;
-            this.tbcontraseña.Location = new System.Drawing.Point(264, 145);
+            this.tbcontraseña.Location = new System.Drawing.Point(264, 121);
             this.tbcontraseña.Name = "tbcontraseña";
             this.tbcontraseña.Size = new System.Drawing.Size(214, 19);
             this.tbcontraseña.TabIndex = 2;
@@ -123,7 +126,7 @@
             this.tblogin.AutoSize = true;
             this.tblogin.Font = new System.Drawing.Font("Century Gothic", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tblogin.ForeColor = System.Drawing.Color.DimGray;
-            this.tblogin.Location = new System.Drawing.Point(338, 35);
+            this.tblogin.Location = new System.Drawing.Point(329, 21);
             this.tblogin.Name = "tblogin";
             this.tblogin.Size = new System.Drawing.Size(82, 25);
             this.tblogin.TabIndex = 5;
@@ -137,7 +140,7 @@
             this.btningresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btningresar.ForeColor = System.Drawing.Color.LightGray;
-            this.btningresar.Location = new System.Drawing.Point(286, 191);
+            this.btningresar.Location = new System.Drawing.Point(286, 208);
             this.btningresar.Name = "btningresar";
             this.btningresar.Size = new System.Drawing.Size(167, 40);
             this.btningresar.TabIndex = 3;
@@ -151,7 +154,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.linkLabel1.LinkColor = System.Drawing.Color.Silver;
-            this.linkLabel1.Location = new System.Drawing.Point(296, 251);
+            this.linkLabel1.Location = new System.Drawing.Point(296, 260);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(146, 13);
             this.linkLabel1.TabIndex = 0;
@@ -180,12 +183,39 @@
             this.picocultar.TabStop = false;
             this.picocultar.Click += new System.EventHandler(this.picocultar_Click);
             // 
+            // lblerror
+            // 
+            this.lblerror.AutoSize = true;
+            this.lblerror.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.lblerror.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblerror.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblerror.ImageKey = "(ninguno)";
+            this.lblerror.Location = new System.Drawing.Point(251, 175);
+            this.lblerror.Name = "lblerror";
+            this.lblerror.Size = new System.Drawing.Size(260, 19);
+            this.lblerror.TabIndex = 10;
+            this.lblerror.Text = "    Ingrese Usuario y/o contraseña      ";
+            this.lblerror.Visible = false;
+            // 
+            // pberroringreso
+            // 
+            this.pberroringreso.Image = ((System.Drawing.Image)(resources.GetObject("pberroringreso.Image")));
+            this.pberroringreso.Location = new System.Drawing.Point(246, 175);
+            this.pberroringreso.Name = "pberroringreso";
+            this.pberroringreso.Size = new System.Drawing.Size(19, 19);
+            this.pberroringreso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pberroringreso.TabIndex = 11;
+            this.pberroringreso.TabStop = false;
+            this.pberroringreso.Visible = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(58)))), ((int)(((byte)(83)))));
             this.ClientSize = new System.Drawing.Size(564, 291);
+            this.Controls.Add(this.pberroringreso);
+            this.Controls.Add(this.lblerror);
             this.Controls.Add(this.picocultar);
             this.Controls.Add(this.piccerrar);
             this.Controls.Add(this.linkLabel1);
@@ -206,6 +236,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.piccerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picocultar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pberroringreso)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,5 +255,7 @@
         private System.Windows.Forms.PictureBox piccerrar;
         private System.Windows.Forms.PictureBox picocultar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblerror;
+        private System.Windows.Forms.PictureBox pberroringreso;
     }
 }

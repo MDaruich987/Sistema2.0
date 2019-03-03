@@ -103,6 +103,16 @@ namespace SistemadeAbogados.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dialogerror_92823 {
+            get {
+                object obj = ResourceManager.GetObject("dialogerror_92823", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edificio_de_banco {
             get {
                 object obj = ResourceManager.GetObject("edificio-de-banco", resourceCulture);

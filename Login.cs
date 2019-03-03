@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-
+//instanciamos la capa de dominio
+using CapaDominio;
 namespace SistemadeAbogados
 {
     public partial class Login : Form
@@ -114,9 +115,55 @@ namespace SistemadeAbogados
 
         private void btningresar_Click(object sender, EventArgs e)
         {
-            Form MenuInicio = new MenuInicio();
-            MenuInicio.Show();
-            this.Hide();
+            
+            //usuario y contraseña no vacios
+            if (tbusuario.Text != "Usuario")
+            {
+                if (tbcontraseña.Text != "Contraseña")
+                {
+                    pberroringreso.Visible = false;
+                    lblerror.Visible = false;
+                    //en caso de que este correcto
+                    //instanciamos al modelo usuario de la capa de dominio
+                    ModeloDominioUsuario usuario = new ModeloDominioUsuario();
+                    //declaramos una variable implicita y asignamos como valor el resultado
+                    var loginvalido = usuario.LoginUser(tbusuario.Text, tbusuario.Text);
+                    if (loginvalido == true)
+                    {
+                        //mostramos el formulario principal y 
+                        Form MenuInicio = new MenuInicio();
+                        MenuInicio.Show();
+                        this.Hide();
+                    }
+                    //pasamos de un formulario al otro
+                   
+                }
+                else
+                {
+                    lblerror.Visible = true;
+                    pberroringreso.Visible = true;
+                    lblerror.Text = "    Ingrese contraseña";
+
+                }
+            }
+            else
+            {
+                pberroringreso.Visible = true;
+                lblerror.Visible = true;
+                lblerror.Text = "    Ingrese Usuario";
+            }
+        }
+
+        //metodo para mostrar el error en el logueo
+        private void msgError(string msg)
+        {
+            lblerror.Text = "    " + msg;
+            lblerror.Visible = true;
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

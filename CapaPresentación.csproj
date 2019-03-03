@@ -181,9 +181,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Cerrar.jpg" />
+    <None Include="Resources\dialogerror_92823.png" />
     <Content Include="Resources\Maximizar.jpg" />
     <Content Include="Resources\Minimizar.jpg" />
     <Content Include="Resources\Ocultar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDominio\CapaDominio.csproj">
+      <Project>{76c19c4d-ff50-4b39-aadd-1faf24f93849}</Project>
+      <Name>CapaDominio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
